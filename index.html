@@ -6,27 +6,57 @@
     <title>Agrofeira Paragominas</title>
 </head>
 <body>
+    <a href="#conteudo-principal">Ir para conteúdo principal da página.</a>
     <header>
         <h1>Agrofeira Paragominas</h1>
         <nav>
             <ul>
-                <li><a href="#agrofeira">Agrofeira</a></li>
-                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="">Início</a></li>
+                <li><a href="">Safra</a></li>
+                <li><a href="">Cadastro do Produtor</a></li>
+                <li><a href="">Sobre Nós</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2 id="agrofeira">O que é a Agrofeira?</h2>
-        <p>A Agrofeira é a maior feira de agro negócio da região de Paragominas</p>
-        <h2 id="produtos">Produtos</h2>
-        <ul>
-            <li>Tratores</li>
-            <li>Fertilizantes</li>
-            <li>Material de campo</li>
-        </ul>
+    <main id="conteudo-principal">
+        <section>
+            <h2 id="titulo"></h2>
+            <p>A agrofeira é a <strong>maior feira</strong> de produtores da região de Paragominas!</p>
+            <figure>
+                <picture>
+                    <source srcset="feira-1280.jpg 1280w, feira-330.jpg w330">
+                    <img src="feira-330.jpg" width="330" height="247" alt="Barracas de frutas e verduras na feira da agricultura familiar">
+                </picture>
+                <figcaption>Fotografia da feira, mostrando mesas de venda de frutas e legumes. Foto: Rayelle da Silva Freitas, CC BY-SA 4.0, via Wikimedia Commons</figcaption>
+            </figure>
+        </section>
+        <search>
+            <form>
+                <label for="pesquisa">Procurar Produto</label>
+                <input type="text" id="pesquisa" name="pesquisa">
+                <button><img src="lupa.png" alt="Pesquisar" width="40" height="40"></button>
+            </form>
+        </search>
+        <section>
+            <h2 id="produtos">Lista de Produtos</h2>
+            <ul>
+                <li>Mandioca - saca de 60 kg</li>
+                <li>Banana-prata - cacho</li>
+                <li>Açaí - rasa</li>
+                <li>Pimenta-do-reino - quilo</li>
+                <li>Cupuaçu - quilo</li>
+                <li>Alface - maço</li>
+            </ul>
+            <div><p>Aviso: Os preços mudam toda semana! <strong>Verifique os preços antes de comprar!</strong></p></div>
+        </section>
+        <aside>
+            <h3>Locais e Horários</h3>
+            <p>Determinado Local</p>
+            <p>Das 7h às 11h</p>
+        </aside>
     </main>
     <footer>
-        <p>Entre em contato conosco!</p>
+        <p>Entre em contato conosco! (xx) xxxxx-xxxx</p>
     </footer>
 </body>
 </html>
