@@ -3,23 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrofeira Paragominas</title>
+    <title>Safra - AgroFeira</title>
 </head>
 <body>
     <a href="#conteudo-principal">Ir para conteúdo principal da página.</a>
     <header>
         <h1>Agrofeira Paragominas</h1>
-        <nav>
+        <nav aria-label="Principal">
             <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Safra</a></li>
-                <li><a href="">Cadastro do Produtor</a></li>
-                <li><a href="">Sobre Nós</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="safra.html" aria-current="page">Safra</a></li>
+                <li><a href="cadastro-produtor.html">Cadastro do Produtor</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
             </ul>
         </nav>
     </header>
     <main id="conteudo-principal">
-
+        <h2>Título</h2>
+        <p>Cada célula mostra a oferta do produto naquele mês: <strong>cheio</strong> quando a oferta é grande, <strong>meia</strong> quando a oferta é menor, e <strong>vazio</strong> quando não há safra.</p>
+        <table>
+            <caption>Tabela de Ofertas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Mandioca</th>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                </tr>
+                <tr>
+                    <th>Banana-prata</th>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                    <td>meia</td>
+                    <td>meia</td>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                </tr>
+                <tr>
+                    <th>Açaí</th>
+                    <td>meia</td>
+                    <td>vazio</td>
+                    <td>vazio</td>
+                    <td>vazio</td>
+                    <td>meia</td>
+                    <td>cheio</td>
+                </tr>
+                <tr>
+                    <th>Pimenta-do-reino</th>
+                    <td>vazio</td>
+                    <td>vazio</td>
+                    <td>vazio</td>
+                    <td>meia</td>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                </tr>
+                <tr>
+                    <th>Cupuaçu</th>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                    <td>meia</td>
+                    <td>vazio</td>
+                    <td>vazio</td>
+                </tr>
+                <tr>
+                    <th>Alface</th>
+                    <td>meia</td>
+                    <td>meia</td>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                    <td>cheio</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
         <p>Entre em contato conosco! (xx) xxxxx-xxxx</p>
