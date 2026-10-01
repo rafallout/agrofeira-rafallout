@@ -3,23 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroFeira Paragominas</title>
+    <title>Cadastro do Produtor - AgroFeira</title>
 </head>
 <body>
     <a href="#conteudo-principal">Ir para conteúdo principal da página.</a>
     <header>
         <h1>AgroFeira Paragominas</h1>
-        <nav>
+        <nav aria-label="Principal">
             <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">Safra</a></li>
-                <li><a href="">Cadastro do Produtor</a></li>
-                <li><a href="">Sobre Nós</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="safra.html">Safra</a></li>
+                <li><a href="cadastro-produtor.html" aria-current="page">Cadastro do Produtor</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
             </ul>
         </nav>
     </header>
     <main id="conteudo-principal">
-        
+        <h2>Cadastro do Produtor</h2>
+        <form action="">
+            <fieldset>
+                <legend>Sobre você</legend>
+
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" autocomplete="name" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" autocomplete="tel" required>
+
+                <label for="numcaf">Número do CAF</label>
+                <input type="text" id="numcaf" name="numcaf">
+
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" pattern="[0-9]{5}-?[0-9]{3}" inputmode="numeric">
+            </fieldset>
+            <fieldset>
+                <legend>O que você vende?</legend>
+
+                <label for="produto">Produto principal</label>
+                <select name="produto" id="produto" required>
+                    <option value="">Escolha um produto</option>
+                    <option value="mandioca">Mandioca</option>
+                    <option value="banana-prata">Banana-prata</option>
+                    <option value="acai">Açaí</option>
+                    <option value="pimenta-do-reino">Pimenta-do-reino</option>
+                    <option value="cupuacu">Cupuaçu</option>
+                    <option value="alface">Alface</option>
+                </select>
+
+                <label for="quantidade">Quantidade por semana</label>
+                <input type="numeric" id="quantidade" name="quantidade" min="1" max="500" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" autocomplete="tel" required>
+
+                <label for="data-entrega">Começa a entregar em</label>
+                <input type="date" id="data-entrega" name="data-entrega">
+
+                <fieldset>
+                    <legend>Como entrega?</legend>
+                    <input type="radio" id="feira" name="entrega" value="feira">
+                    <label for="feira">Leva à feira</label>
+                    <input type="radio" id="propriedade name="entrega" value="propriedade">
+                    <label for="propriedade">A feira retira na propriedade</label>
+                </fieldset>
+
+                <label for="observacao">Observação</label>
+                <textarea id="observacao" name="observacao" rows="3"></textarea>
+
+                <input type="checkbox" id="aceite" name="aceite" value="1" required>
+                <label for="aceite">Li e aceito as regras da feira</label>
+            </fieldset>
+            <button type="submit">Realizar Cadastro</button>
+        </form>
+        <p role="status"></p>
     </main>
     <footer>
         <p>Entre em contato conosco! (xx) xxxxx-xxxx</p>
