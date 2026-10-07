@@ -13,14 +13,15 @@
     /* Fontes e tamanhos */
     --fonte-texto: system-ui, sans-serif;
     --font-titulo: "Cactus Classical Serif", serif;
-    --tamanho-texto: 1rem;
     --tamanho-h1: 2rem;
     --tamanho-h2: 1.75rem;
     --tamanho-h3: 1.5rem;
+    --tamanho-texto: 1rem;
 }
 
 :root {
     /* Espacamentos, raio e sombra */
+    /* Foram usados acréscimos de 0.5rem a cada nível */
     --espaco-1: 0.5rem;
     --espaco-2: 1rem;
     --espaco-3: 1.5rem;

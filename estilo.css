@@ -1,3 +1,42 @@
 body {
-    color: --cor-fundo;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-texto);
+    font-size: var(--tamanho-texto);
+    color: var(--cor-texto);
+}
+
+.conteudo-principal,
+aside {
+    padding: var(--espaco-4);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-titulo);
+    line-height: 1.25rem;
+}
+
+h1 {
+    font-size: var(--tamanho-h1);
+}
+
+h2 {
+    font-size: var(--tamanho-h2);
+}
+
+h3 {
+    font-size: var(--tamanho-h3);
+}
+
+h2,
+h3 {
+    color: var(--cor-marca);
+    padding-top: var(--espaco-3);
+    padding-bottom: var(--espaco-1);
+}
+
+p {
+    max-width: 30rem;
+    margin-bottom: var(--espaco-1);
 }
