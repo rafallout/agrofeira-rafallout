@@ -40,3 +40,21 @@ p {
     max-width: 30rem;
     margin-bottom: var(--espaco-1);
 }
+
+.cabecalho-site {
+    background-color: var(--cor-marca);
+    padding: var(--espaco-4);
+}
+
+.cabecalho-site h1 {
+    color: var(--cor-sobre-marca);
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu a {
+    color: var(--cor-sobre-marca);
+}
