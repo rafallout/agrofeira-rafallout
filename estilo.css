@@ -5,7 +5,7 @@ body {
     color: var(--cor-texto);
 }
 
-.conteudo-principal,
+main,
 aside {
     padding: var(--espaco-4);
 }
@@ -13,8 +13,8 @@ aside {
 h1,
 h2,
 h3 {
-    font-family: var(--font-titulo);
-    line-height: 1.25rem;
+    font-family: var(--fonte-titulo);
+    line-height: 1.25;
 }
 
 h1 {
@@ -44,17 +44,56 @@ p {
 .cabecalho-site {
     background-color: var(--cor-marca);
     padding: var(--espaco-4);
-}
-
-.cabecalho-site h1 {
     color: var(--cor-sobre-marca);
 }
 
 .menu {
-    list-style-type: none;
     padding: 0;
+    list-style-type: none;
 }
 
 .menu a {
     color: var(--cor-sobre-marca);
+}
+
+.menu a[aria-current="page"] {
+  font-weight: bold;
+}
+
+.rodape-site {
+    border-top: 2px solid var(--cor-borda);
+    color: var(--cor-texto-suave);
+    margin: var(--espaco-2);
+}
+
+.lista-produtos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cartao-produto {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    padding: var(--espaco-2);
+    margin-bottom: var(--espaco-1);
+    max-width: 20rem;
+}
+
+.figura-destaque figcaption{
+    color: var(--cor-texto-suave);
+    margin-top: var(--espaco-1);
+}
+
+.busca input {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 0.5em;
+    background-color: var(--cor-superficie);
+}
+
+.busca button,
+.formulario-cadastro button {
+    
 }
