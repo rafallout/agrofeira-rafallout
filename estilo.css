@@ -32,8 +32,8 @@ h3 {
 h2,
 h3 {
     color: var(--cor-marca);
-    padding-top: var(--espaco-3);
-    padding-bottom: var(--espaco-1);
+    margin-top: var(--espaco-3);
+    margin-bottom: var(--espaco-1);
 }
 
 p {
@@ -61,9 +61,9 @@ p {
 }
 
 .rodape-site {
-    border-top: 2px solid var(--cor-borda);
+    border-top: 1px solid var(--cor-borda);
     color: var(--cor-texto-suave);
-    margin: var(--espaco-2);
+    padding: var(--espaco-2);
 }
 
 .lista-produtos {
@@ -97,14 +97,14 @@ p {
 .formulario-cadastro button {
     background-color: var(--cor-marca);
     color: var(--cor-sobre-marca);
-    border: 1px solid var(--cor-borda);
+    border: none;
     border-radius: var(--raio);
-    padding: 0.5em;
+    padding: 0.75em;
 }
 
 .aviso {
     background-color: var(--cor-superficie);
-    border: 2px solid var(--cor-marca);
+    border: 1px solid var(--cor-marca);
     border-radius: var(--raio);
     padding: var(--espaco-2);
     max-width: 30rem;
@@ -156,7 +156,7 @@ p {
 
 blockquote {
     color: var(--cor-texto-suave);
-    padding-left: var(--espaco-1);
+    padding-left: var(--espaco-3);
 }
 
 dl dt {
