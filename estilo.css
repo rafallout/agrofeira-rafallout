@@ -95,5 +95,15 @@ p {
 
 .busca button,
 .formulario-cadastro button {
-    
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+    border-radius: var(--raio);
+}
+
+.aviso {
+    background-color: var(--cor-superficie);
+    border: 2px solid var(--cor-marca);
+    border-radius: var(--raio);
+    padding: var(--espaco-2);
+    max-width: 30rem;
 }
