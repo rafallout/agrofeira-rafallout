@@ -97,7 +97,9 @@ p {
 .formulario-cadastro button {
     background-color: var(--cor-marca);
     color: var(--cor-sobre-marca);
+    border: 1px solid var(--cor-borda);
     border-radius: var(--raio);
+    padding: 0.5em;
 }
 
 .aviso {
@@ -105,5 +107,66 @@ p {
     border: 2px solid var(--cor-marca);
     border-radius: var(--raio);
     padding: var(--espaco-2);
+    max-width: 30rem;
+}
+
+.tabela-safra th,
+.tabela-safra td {
+    padding: var(--espaco-1);
+}
+
+.tabela-safra thead th {
+    background-color: var(--cor-marca);
+    color: var(--cor-sobre-marca);
+}
+
+.tabela-safra tbody td {
+    background-color: var(--cor-superficie);
+}
+
+.formulario-cadastro fieldset {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: var(--espaco-1);
+    margin-bottom: var(--espaco-2);
+}
+
+.formulario-cadastro fieldset fieldset {
+    border: none;
+    padding: 0;
+}
+
+.formulario-cadastro fieldset legend {
+    font-weight: bold;
+    color: var(--cor-marca);
+}
+
+.formulario-cadastro input[type="text"],
+.formulario-cadastro input[type="email"],
+.formulario-cadastro input[type="tel"],
+.formulario-cadastro input[type="number"],
+.formulario-cadastro input[type="date"],
+.formulario-cadastro select,
+.formulario-cadastro textarea {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: 0.5em;
+    background-color: var(--cor-superficie);
+}
+
+blockquote {
+    color: var(--cor-texto-suave);
+    padding-left: var(--espaco-1);
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+.pergunta {
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    padding: var(--espaco-1);
+    margin-bottom: var(--espaco-1);
     max-width: 30rem;
 }
