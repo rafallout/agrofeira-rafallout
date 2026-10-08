@@ -77,7 +77,7 @@ p {
     border-radius: var(--raio);
     box-shadow: var(--sombra);
     padding: var(--espaco-2);
-    margin-bottom: var(--espaco-1);
+    margin-bottom: var(--espaco-2);
     max-width: 20rem;
 }
 
