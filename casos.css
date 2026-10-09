@@ -1,0 +1,34 @@
+/* Caso 1 */
+/* A parte importante do aviso ficará da cor da marca (token --cor-marca).
+Mesmo que exista uma regra "strong" (0-0-1) sendo aplicada depois, a regra que aplica a cor
+da marca vence por especificidade, por ser ".classe strong" (0-1-1).*/
+.aviso strong {
+    color: var(--cor-marca);
+}
+
+strong {
+    color:var(--cor-texto-suave);
+}
+
+/* Caso 2 */
+/* Neste caso, as duas regras possuem a mesma especificidade (0-1-1), então neste caso, o critério de desempate
+é a ordem que a regra é lida no arquivo, a última regra escrita prevalece: "label[for]". */
+.busca label {
+    color: var(--cor-marca);
+}
+
+label[for] {
+    color: var(--cor-texto-suave);
+}
+
+/* Caso 3 */
+/* Acredito que neste caso a regra ".rodape-site" (0-1-0) será a "vencedora" por ser mais específica.
+"footer p" é (0-0-2), mas como é lido da esquerda para a direita, e o primeiro valor
+a desempatar vence, a regra vencedora será ".rodape-site". */
+.rodape-site {
+    color: var(--cor-marca);
+}
+
+footer p {
+    color: var(--cor-texto);
+}
