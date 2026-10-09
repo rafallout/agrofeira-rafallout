@@ -1,12 +1,12 @@
 :root {
     /* Minhas cores */
-    --cor-fundo: #DCE8F0;
+    --cor-fundo: #E8D5B7;
     --cor-superficie: #FFFFFF;
-    --cor-texto: #2A2118; /* 11,3:1 sobre --cor-fundo: AAA; 14,0:1 sobre --cor-superficie: AAA */
-    --cor-texto-suave: #5A4A3A; /* 6,16:1 sobre --cor-fundo: AA */
-    --cor-marca: #8B3A2A; /* 6,25:1 sobre --cor-fundo: AA */
-    --cor-sobre-marca: #FFFFFF; /* 7,72:1 sobre --cor-marca: AAA */
-    --cor-borda: #C4B8A8;
+    --cor-texto: #2A1E14;
+    --cor-texto-suave: #5C4A38;
+    --cor-marca: #8B3A2A;
+    --cor-sobre-marca: #FFFFFF;
+    --cor-borda: #B8A88F;
 }
 
 :root {
